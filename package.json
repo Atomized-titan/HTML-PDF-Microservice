@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Atomized-titan/HTML-PDF-Microservice/issues"
   },
-  "homepage": "https://github.com/Atomized-titan/HTML-PDF-Microservice#readme"
+  "homepage": "https://github.com/Atomized-titan/HTML-PDF-Microservice#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "puppeteer": "^19.11.0"
+  }
 }
