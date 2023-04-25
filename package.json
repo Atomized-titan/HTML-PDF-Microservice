@@ -1,0 +1,19 @@
+{
+  "name": "html-pdf-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atomized-titan/HTML-PDF-Microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atomized-titan/HTML-PDF-Microservice/issues"
+  },
+  "homepage": "https://github.com/Atomized-titan/HTML-PDF-Microservice#readme"
+}
