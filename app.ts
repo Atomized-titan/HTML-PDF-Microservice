@@ -11,7 +11,11 @@ app.post("/v1/convert", async (req, res) => {
   try {
     const { html, css, options } = req.body;
     const browser = await puppeteer.launch({
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      executablePath:
+        process.env.NODE_ENV === "production"
+          ? process.env.PUPPETEER_EXECUTABLE_PATH
+          : puppeteer.executablePath(),
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--no-zygote"],
       headless: "new",
     });
 
