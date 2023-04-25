@@ -2,7 +2,9 @@ const express = require("express");
 const puppeteer = require("puppeteer");
 const app = express();
 require("dotenv").config();
+const cors = require("cors");
 
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json({ limit: "50mb" }));
 
 app.post("/v1/convert", async (req, res) => {
